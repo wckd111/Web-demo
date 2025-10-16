@@ -320,6 +320,19 @@ a {
   line-height: var(--heading-line-height);
 }
 
+/* Reduce hero name size specifically */
+.banner-title {
+  font-size: clamp(1.75rem, 4.5vw, 3rem);
+}
+
+/* Tame oversized section background numerals on small screens */
+@media (max-width: 576px) {
+  .bg-text:after {
+    font-size: 12rem;
+    opacity: 0.15;
+  }
+}
+
 /* mobile menu */
 /*----- Header Menu
 --------------------------------------------------------------*/
